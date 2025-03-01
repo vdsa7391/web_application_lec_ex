@@ -47,4 +47,38 @@ console.log("sum new:",avg(newArray)[1])
 
 
 
+//objectss ******
+	
+function greeter(name){
+    const myname= name;
+    const hello= function() {
+        return "hello" + myname
+    }
+    return hello;
+    }    
+const hellotom= greeter("tom");
+const hellogray= greeter("gray");
+console.log(hellotom())
+console.log(hellogray())
+
+//***imp
+
+const d= (
+    function () {
+    let n = 0;
+    return {
+    count: function () {
+    return n++; },
+    reset: function () {
+    n = 0; }
+    };
+})();
+   
+
+
+console.log(d.count());
+console.log(d.count());
+d.reset();
+console.log(d.count());
+console.log(d.count());
 
